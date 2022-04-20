@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1650411452 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\main.cpp
+	<bits/stdc++.h>
+	"Minion.h"
+
+1650454346 c:\users\john\documents\fmi\poo\proiect 2\hearthstone\card.h
+	<bits/stdc++.h>
+
+1650454341 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\card.cpp
+	<bits/stdc++.h>
+	"Card.h"
+
+1650454544 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\minion.cpp
+	"Minion.h"
+
+1650454365 c:\users\john\documents\fmi\poo\proiect 2\hearthstone\minion.h
+	"Card.h"
+
+1650453974 c:\users\john\documents\fmi\poo\proiect 2\hearthstone\spell.h
+	"Card.h"
+
+1650409162 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\spell.c
+
+1650451546 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\spell.cpp
+	"Minion.h"
+	"Spell.h"
+

@@ -1,0 +1,54 @@
+# depslib dependency file v1.0
+1648143844 source:c:\users\john\documents\fmi\poo\proiect 1\proiect1\main.cpp
+	<iostream>
+	<cstring>
+	<vector>
+
+1648074462 source:c:\users\john\documents\fmi\poo\proiect 1\proiect1\deck.cpp
+	<iostream>
+	<cstring>
+	"Deck.h"
+
+1648074385 source:c:\users\john\documents\fmi\poo\proiect 1\proiect1\hero.cpp
+	<iostream>
+	<cstring>
+	"Hero.h"
+
+1648073268 source:c:\users\john\documents\fmi\poo\proiect 1\proiect1\heropower.cpp
+	<iostream>
+	<cstring>
+	"HeroPower.h"
+
+1648073408 source:c:\users\john\documents\fmi\poo\proiect 1\proiect1\player.cpp
+	<iostream>
+	<cstring>
+	"Player.h"
+
+1648074503 source:c:\users\john\documents\fmi\poo\proiect 1\proiect1\card.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+	"Card.h"
+
+1648074444 c:\users\john\documents\fmi\poo\proiect 1\proiect1\card.h
+	<iostream>
+
+1648073868 c:\users\john\documents\fmi\poo\proiect 1\proiect1\deck.h
+	<iostream>
+	<cstring>
+	"Card.h"
+
+1648073291 c:\users\john\documents\fmi\poo\proiect 1\proiect1\player.h
+	<iostream>
+	<cstring>
+	"Deck.h"
+
+1648072602 c:\users\john\documents\fmi\poo\proiect 1\proiect1\heropower.h
+	<iostream>
+	<cstring>
+
+1648072820 c:\users\john\documents\fmi\poo\proiect 1\proiect1\hero.h
+	<iostream>
+	<cstring>
+	"HeroPower.h"
+

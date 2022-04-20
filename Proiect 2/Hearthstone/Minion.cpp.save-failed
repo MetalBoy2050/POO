@@ -1,0 +1,77 @@
+#include "Minion.h"
+
+using namespace std;
+
+Minion::Minion():Card(), attack(0), health(0){}
+
+Minion::Minion(string name, string backgroundFile, string description, CardType cardType, int cost, int attack, int health):
+    Card(name, backgroundFile, description, cardType, cost), attack(attack), health(health){}
+
+Minion::Minion(string name, string backgroundFile, string description, int cost, int attack, int health):
+    Card(name, backgroundFile, description, cost), attack(attack), health(health){}
+
+Minion::Minion(string name, string backgroundFile, CardType cardType, int cost, int attack, int health):
+    Card(name, backgroundFile, cardType, cost), attack(attack), health(health){}
+
+istream& Minion::read(istream& in){
+    cout << "Introduceti datele minionului " << Minion::nrCards << '\n';
+    cout << "Numele: ";
+    in >> this->getName();
+    cout << "Background file-ul: ";
+    in >> this->getBackgroundFile();
+    cout << "Card type-ul: ";
+    in >> this->getCardType();
+    cout << "Descrierea: ";
+    in >> this->getDescription();
+    cout << "Cost-ul: ";
+    in >> this->getCost();
+    cout << "Attack: ";
+    in >> this->attack;
+    cout << "Health: ";
+    in >> this->health;
+
+    return in;
+}
+
+ostream& Minnion::write(ostream& out){
+    out << "Minionul cu numarul " << this->getCardId() << " este urmatorul\n";
+    out << "Numele: " << this->getName() << '\n';
+    out << "Background file-ul: " << this->getBackgroundFile() << '\n';
+    out << "Card type-ul: " << this->getCardType() << '\n';
+    out << "Descrierea: " << this->getDescription() << '\n';
+    out << "Cost: " << this->getCost() << '\n';
+    out << "Attack: " << this->attack << '\n';
+    out << "Health: " << this->health << '\n';
+
+    return out;
+}
+
+friend istream& operator >> (istream& in, Minion& minion){
+    return minion.read(in);
+}
+friend ostream& operator << (ostream& out, const Minion& minion){
+    return minion.write(in);
+}
+
+Minion Minion::operator = (const Minion& minion){
+    Minion newMinion(*this);
+
+    newMinion.attack += minion.attack;
+    newMinion.health += minion.health;
+
+    return newMinion;
+};
+
+Minion Minion::operator + (const Minion& card);
+Minion Minion::operator - (const Minion& card);
+Minion Minion::operator ++();
+Minion Minion::operator ++(int x);
+Minion Minion::operator --();
+Minion Minion::operator --(int x);
+Minion::operator int() const {return this->cost;}
+
+istream& Minion::read(istream& in);
+ostream& Minion::write(ostream& out);
+
+istream& Minion::operator >>(istream& in, Minion& minion);
+ostream& Minion::operator << (ostream& out, constMinion& minion);
