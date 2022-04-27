@@ -34,11 +34,14 @@
 		</Compiler>
 		<Unit filename="Card.cpp" />
 		<Unit filename="Card.h" />
+		<Unit filename="ChooseOne.cpp" />
+		<Unit filename="ChooseOne.h" />
+		<Unit filename="Deck.cpp" />
+		<Unit filename="Deck.h" />
+		<Unit filename="IO.h" />
 		<Unit filename="Minion.cpp" />
 		<Unit filename="Minion.h" />
-		<Unit filename="Spell.c">
-			<Option compilerVar="CC" />
-		</Unit>
+		<Unit filename="Spell.cpp" />
 		<Unit filename="Spell.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>

@@ -1,27 +1,44 @@
 # depslib dependency file v1.0
-1650411452 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\main.cpp
-	<bits/stdc++.h>
-	"Minion.h"
+1651067153 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\main.cpp
+	"ChooseOne.h"
+	"Deck.h"
 
-1650454346 c:\users\john\documents\fmi\poo\proiect 2\hearthstone\card.h
+1651067028 c:\users\john\documents\fmi\poo\proiect 2\hearthstone\card.h
 	<bits/stdc++.h>
+	"IO.h"
 
-1650454341 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\card.cpp
-	<bits/stdc++.h>
+1651067036 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\card.cpp
 	"Card.h"
 
-1650454544 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\minion.cpp
+1651067092 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\minion.cpp
 	"Minion.h"
 
-1650454365 c:\users\john\documents\fmi\poo\proiect 2\hearthstone\minion.h
+1651066964 c:\users\john\documents\fmi\poo\proiect 2\hearthstone\minion.h
 	"Card.h"
 
-1650453974 c:\users\john\documents\fmi\poo\proiect 2\hearthstone\spell.h
+1651066973 c:\users\john\documents\fmi\poo\proiect 2\hearthstone\spell.h
 	"Card.h"
 
 1650409162 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\spell.c
 
-1650451546 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\spell.cpp
+1651067163 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\spell.cpp
 	"Minion.h"
 	"Spell.h"
+
+1651067645 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\chooseone.cpp
+	"ChooseOne.h"
+
+1651067499 c:\users\john\documents\fmi\poo\proiect 2\hearthstone\chooseone.h
+	"Minion.h"
+	"Spell.h"
+
+1651066402 source:c:\users\john\documents\fmi\poo\proiect 2\hearthstone\deck.cpp
+	"Deck.h"
+
+1651066212 c:\users\john\documents\fmi\poo\proiect 2\hearthstone\deck.h
+	"Card.h"
+	"Minion.h"
+
+1651058120 c:\users\john\documents\fmi\poo\proiect 2\hearthstone\io.h
+	<iostream>
 

@@ -1,7 +1,8 @@
-#include <bits/stdc++.h>
-
 #ifndef CARD_H
 #define CARD_H
+
+#include <bits/stdc++.h>
+#include "IO.h"
 
 using namespace std;
 
@@ -13,7 +14,10 @@ enum CardType{
     OnceInALifetime
 };
 
-class Card{
+class Minion;
+class Spell;
+class ChooseOne;
+class Card : public IO{
 protected:
     string name;
     string backgroundFile;
@@ -26,9 +30,9 @@ protected:
 public:
     Card();
     Card(string name, string backgroundFile, string description, CardType cardType, int cost);
-    Card(string name, string backgroundFile, CardType cardType, int cost);
-    Card(string name, string backgroundFile, string description, int cost);
-    Card(string name, string backGroundFile, string description, CardType cardType);
+   // Card(string name, string backgroundFile, CardType cardType, int cost);
+   // Card(string name, string backgroundFile, string description, int cost);
+   // Card(string name, string backGroundFile, string description, CardType cardType);
     Card(const Card& card);
 
     static int getNrCards(){return nrCards;}
@@ -46,15 +50,20 @@ public:
     void setCost(int cost){this->cost = cost;}
 
     virtual Card& operator = (const Card& card);
-    bool operator < (const Card& card) const {return this->cost < card.cost;}
+    /*bool operator < (const Card& card) const {return this->cost < card.cost;}
     bool operator <= (const Card& card) const {return this->cost <= card.cost;}
     bool operator > (const Card& card) const {return this->cost > card.cost;}
     bool operator >= (const Card& card) const {return this->cost >= card.cost;}
     bool operator == (const Card& card) const {return this->cost == card.cost;}
-    operator int() const {return this->cost;}
+    operator int() const {return this->cost;}*/
 
-    virtual istream& read(istream& in) = 0;
-    virtual ostream& write(ostream& out) const = 0;
+    istream& read(istream&);
+    ostream& write(ostream&) const;
+
+    friend istream& operator >> (istream& in, Card& card);
+    friend ostream& operator << (ostream& out, const Card& card);
+
+    ~Card() {cout << "Destructing card " << this->cardId << '\n';}
 };
 
 #endif // CARD_H
