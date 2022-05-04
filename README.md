@@ -1,2 +1,2 @@
 # POO
-Proiectele la POO
+A Hearthstone Interface made with classes in C++
